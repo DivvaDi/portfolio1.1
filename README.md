@@ -6,8 +6,8 @@
 ## 🔗 Ссылки
 
 ## 🔗 Ссылки
-- **Опубликованный сайт:** https://divvadi.github.io/portfolio/
-- **Репозиторий:** https://github.com/divvadi/portfolio
+- **Опубликованный сайт:** https://divvadi.github.io/portfolio1.1/
+- **Репозиторий:** https://github.com/divvadi/portfolio1.1
 
 ## 🛠 Стек
 
