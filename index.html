@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Портфолио-резюме Дианы Овчинниковой — флориста премиум-сегмента. Санкт-Петербург." />
+  <meta name="theme-color" content="#FAF3EC" />
+  <title>Диана Овчинникова — Флорист</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Прогресс-бар чтения -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ХЕДЕР -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Основная навигация">
+      <a href="#hero" class="nav__logo">Д.&nbsp;Овчинникова</a>
+
+      <button
+        class="nav__burger"
+        id="burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="#about" class="nav__link">Обо мне</a></li>
+        <li><a href="#experience" class="nav__link">Опыт</a></li>
+        <li><a href="#education" class="nav__link">Образование</a></li>
+        <li><a href="#skills" class="nav__link">Навыки</a></li>
+        <li><a href="#projects" class="nav__link">Проекты</a></li>
+        <li><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Переключить тему"
+        title="Переключить тему"
+      >
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <span class="hero__eyebrow">Санкт-Петербург</span>
+          <h1 class="hero__title">
+            Диана<br /><em>Овчинникова</em>
+          </h1>
+          <p class="hero__role">Флорист премиум-салона <span>Kira&nbsp;Flowers</span></p>
+          <p class="hero__tagline">
+            Собираю красоту из деталей — в букете, в кадре, в дизайне.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">Смотреть проекты</a>
+            <a href="#contacts" class="btn btn--ghost">Связаться</a>
+          </div>
+        </div>
+
+        <div class="hero__photo reveal">
+          <div class="hero__photo-frame">
+            <!-- Замени assets/photo.jpg на своё фото -->
+            <img
+              src="assets/photo.jpg"
+              alt="Портрет Дианы Овчинниковой"
+              loading="eager"
+              onerror="this.style.display='none'; this.parentElement.classList.add('hero__photo-frame--empty');"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__ornament" aria-hidden="true">
+        <svg viewBox="0 0 200 40" width="200" height="40" fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M100 20 C 80 5, 60 5, 40 20 C 20 35, 10 20, 0 20" />
+          <path d="M100 20 C 120 5, 140 5, 160 20 C 180 35, 190 20, 200 20" />
+          <circle cx="100" cy="20" r="3" fill="currentColor" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ОБО МНЕ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__number">I</span>
+          <h2 class="section__title">Обо мне</h2>
+          <p class="section__subtitle">Тот, кто умеет видеть красоту — умеет её и создавать.</p>
+        </header>
+
+        <div class="about">
+          <div class="about__bio reveal">
+            <p>
+              Меня зовут Диана, и уже более двух лет я работаю флористом
+              в салоне премиум-уровня <strong>Kira&nbsp;Flowers</strong>.
+              Для меня букет — это не набор цветов, а высказывание: настроением,
+              цветом, ритмом. До цветов я много лет занималась изобразительным
+              искусством, сценарным мастерством, конным спортом и дизайном —
+              и всё это вместе формирует мой взгляд.
+            </p>
+            <p>
+              Я учусь на направлении <strong>«Прикладная информатика в дизайне»</strong>
+              в СПбГУПТД, свободно работаю в условиях многозадачности, легко нахожу
+              общий язык с людьми любого статуса и предпочитаю ясно и точно
+              излагать мысли. Вне работы — горы, лошади, книги, театр и путешествия.
+            </p>
+          </div>
+
+          <div class="about__highlights">
+            <article class="highlight reveal">
+              <span class="highlight__icon">✦</span>
+              <h3 class="highlight__title">Коммуникабельность</h3>
+              <p>Легко работаю с клиентами любого уровня, от частных заказов до партнёрских проектов.</p>
+            </article>
+
+            <article class="highlight reveal">
+              <span class="highlight__icon">✦</span>
+              <h3 class="highlight__title">Многозадачность</h3>
+              <p>Параллельно веду заказы, учёбу, съёмки и творческие проекты без потери качества.</p>
+            </article>
+
+            <article class="highlight reveal">
+              <span class="highlight__icon">✦</span>
+              <h3 class="highlight__title">Художественный вкус</h3>
+              <p>7 лет изобразительного искусства и модельная школа — база для чувства формы и цвета.</p>
+            </article>
+
+            <article class="highlight reveal">
+              <span class="highlight__icon">✦</span>
+              <h3 class="highlight__title">Активная жизненная позиция</h3>
+              <p>Конный спорт, альпинизм, скалолазание, волонтёрство — с детства и до сегодня.</p>
+            </article>
+          </div>
+
+          <div class="about__extra reveal">
+            <h3 class="about__extra-title">Коротко</h3>
+            <ul class="facts">
+              <li><span>Город</span>Санкт-Петербург</li>
+              <li><span>Семейное положение</span>Не замужем</li>
+              <li><span>ПК</span>Уверенный пользователь</li>
+              <li><span>Права</span>Категории A и B</li>
+              <li><span>Английский</span>A2 — начальный</li>
+              <li><span>Привычки</span>Без вредных, спорт и активный образ жизни</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОПЫТ -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__number">II</span>
+          <h2 class="section__title">Опыт работы</h2>
+          <p class="section__subtitle">То, что я делаю каждый день.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__period">07.2024 — настоящее время</span>
+              <span class="timeline__duration">2,5 года</span>
+            </div>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Флорист</h3>
+              <p class="timeline__company">Kira Flowers · салон премиум-уровня</p>
+              <ul class="timeline__duties">
+                <li>Сборка авторских букетов и композиций под задачи клиента.</li>
+                <li>Коммуникация с гостями салона: консультации, работа с запросами и пожеланиями.</li>
+                <li>Контроль свежести растений, приёмка и уход за витриной.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ОБРАЗОВАНИЕ -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__number">III</span>
+          <h2 class="section__title">Образование</h2>
+          <p class="section__subtitle">Академическая база и дополнительный путь.</p>
+        </header>
+
+        <div class="edu">
+          <div class="edu__column">
+            <h3 class="edu__column-title">Основное</h3>
+
+            <article class="card reveal">
+              <span class="card__period">2022 — настоящее время</span>
+              <h4 class="card__title">СПбГУПТД, Институт информационных технологий и автоматизации</h4>
+              <p class="card__subtitle">Направление «Прикладная информатика в дизайне»</p>
+            </article>
+
+            <article class="card reveal">
+              <span class="card__period">2011 — 2022</span>
+              <h4 class="card__title">МОУ «СОШ с углублённым изучением отдельных предметов №2», г. Всеволожск</h4>
+              <p class="card__subtitle">Среднее общее образование</p>
+            </article>
+          </div>
+
+          <div class="edu__column">
+            <h3 class="edu__column-title">Дополнительное</h3>
+
+            <article class="card reveal">
+              <span class="card__period">7-летний курс · диплом</span>
+              <h4 class="card__title">ДШИ им. М. И. Глинки, г. Всеволожск</h4>
+              <p class="card__subtitle">Программа «Изобразительное искусство»</p>
+            </article>
+
+            <article class="card reveal">
+              <span class="card__period">диплом</span>
+              <h4 class="card__title">Модельная школа «Dolce Vita»</h4>
+              <p class="card__subtitle">Подиум, пластика, самопрезентация</p>
+            </article>
+
+            <article class="card reveal">
+              <span class="card__period">курсы и практики</span>
+              <h4 class="card__title">Грантовая грамотность · студия кинопроизводства</h4>
+              <p class="card__subtitle">«Деловая весна», образовательные интенсивы во Всеволожске</p>
+            </article>
+
+            <article class="card reveal">
+              <span class="card__period">школьные годы</span>
+              <h4 class="card__title">Театральная студия им. Хочинского · хореография</h4>
+              <p class="card__subtitle">Чемпионка школы по шахматам</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- НАВЫКИ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__number">IV</span>
+          <h2 class="section__title">Навыки</h2>
+          <p class="section__subtitle">Что я умею и что ценю в работе.</p>
+        </header>
+
+        <div class="skills">
+          <div class="skills__group reveal">
+            <h3 class="skills__title">Профессиональные</h3>
+            <ul class="chips">
+              <li class="chip">Флористика и композиция</li>
+              <li class="chip">Работа с премиум-клиентом</li>
+              <li class="chip">Уход за растениями</li>
+              <li class="chip">Основы дизайна</li>
+              <li class="chip">HTML (базово)</li>
+              <li class="chip">ПК — уверенно</li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__title">Soft skills</h3>
+            <ul class="chips">
+              <li class="chip">Коммуникабельность</li>
+              <li class="chip">Многозадачность</li>
+              <li class="chip">Быстрая обучаемость</li>
+              <li class="chip">Амбициозность</li>
+              <li class="chip">Пунктуальность</li>
+              <li class="chip">Открытость</li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__title">Языки и права</h3>
+            <ul class="chips">
+              <li class="chip">Русский — родной</li>
+              <li class="chip">Английский — A2</li>
+              <li class="chip">Права A и B</li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__title">Увлечения</h3>
+            <ul class="chips">
+              <li class="chip">Конный спорт · конкур</li>
+              <li class="chip">Альпинизм</li>
+              <li class="chip">Скалолазание</li>
+              <li class="chip">Путешествия</li>
+              <li class="chip">Театр и книги</li>
+              <li class="chip">Выставки</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОЕКТЫ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__number">V</span>
+          <h2 class="section__title">Проекты</h2>
+          <p class="section__subtitle">Три истории, в которых я была не наблюдателем, а автором.</p>
+        </header>
+
+        <div class="filters reveal" role="tablist" aria-label="Фильтр проектов">
+          <button class="filter is-active" data-filter="all">Все</button>
+          <button class="filter" data-filter="film">Кино</button>
+          <button class="filter" data-filter="design">Дизайн</button>
+          <button class="filter" data-filter="edu">Обучение</button>
+        </div>
+
+        <div class="projects" id="projectsGrid">
+          <article class="project reveal" data-tags="film">
+            <div class="project__media project__media--film">
+              <span class="project__tag">Кино · 2024</span>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Короткометражный фильм «Контакт»</h3>
+              <p class="project__desc">
+                История о девочке-подростке, которая знакомится в интернете
+                со взрослым мужчиной. Спасает её брат — финал светлый и тёплый.
+              </p>
+              <ul class="project__meta">
+                <li>Литературный и режиссёрский сценарий</li>
+                <li>Переговоры с оператором, актёрами, локациями</li>
+                <li>Аренда света и звука в составе команды</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="edu">
+            <div class="project__media project__media--edu">
+              <span class="project__tag">Обучение · 2024–2025</span>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Индивидуальное обучение 3D-моделированию</h3>
+              <p class="project__desc">
+                Персональные занятия для девочки 11 лет: от первых форм
+                в 3D до собственных мини-проектов.
+              </p>
+              <ul class="project__meta">
+                <li>Разработка программы под возраст и темп</li>
+                <li>Практика через любимые сюжеты ребёнка</li>
+                <li>Развитие насмотренности и аккуратности</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="design">
+            <div class="project__media project__media--design">
+              <span class="project__tag">Дизайн · 2024</span>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Реклама для стоматологии Geeclinic</h3>
+              <p class="project__desc">
+                Разработка визуального решения для рекламных материалов
+                клиники: аккуратно, деликатно, с уважением к премиум-аудитории.
+              </p>
+              <ul class="project__meta">
+                <li>Идея и графическая подача</li>
+                <li>Работа с типографикой и цветом</li>
+                <li>Подготовка материалов к публикации</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects__empty" id="projectsEmpty" hidden>
+          В этой категории пока нет проектов.
+        </p>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="section section--alt" id="contacts">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__number">VI</span>
+          <h2 class="section__title">Контакты</h2>
+          <p class="section__subtitle">Открыта к новым проектам, заказам и сотрудничеству.</p>
+        </header>
+
+        <div class="contacts reveal">
+          <a class="contact" href="https://vk.ru/divvadi" target="_blank" rel="noopener">
+            <span class="contact__label">VK</span>
+            <span class="contact__value">vk.ru/divvadi</span>
+          </a>
+          <a class="contact" href="https://disk.yandex.ru/i/UXOBvhjegcLgoA" target="_blank" rel="noopener">
+            <span class="contact__label">Портфолио-фото</span>
+            <span class="contact__value">Яндекс.Диск</span>
+          </a>
+          <div class="contact contact--static">
+            <span class="contact__label">Локация</span>
+            <span class="contact__value">Санкт-Петербург · удалённо · релокация</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <p class="footer__name">Диана Овчинникова</p>
+        <p class="footer__role">Флорист · Санкт-Петербург</p>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">Реализованный JavaScript</p>
+        <ul class="footer__list">
+          <li>Переключатель тёмной/светлой темы (localStorage)</li>
+          <li>Кнопка «Наверх» с плавным появлением</li>
+          <li>Плавная навигация по якорям</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <p class="footer__title">Использование AI</p>
+        <p class="footer__ai">
+          Нейросеть: <strong>DeepSeek</strong> · время выполнения: ≈&nbsp;<strong>1&nbsp;час</strong>.
+          Подробности — в <a href="README.md">README.md</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Диана Овчинникова. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Кнопка наверх -->
+  <button class="to-top" id="toTop" aria-label="Наверх" title="Наверх">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
